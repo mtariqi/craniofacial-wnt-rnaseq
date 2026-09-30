@@ -1,0 +1,11 @@
+# Unpublished data stays local
+data/raw/*
+!data/raw/README.md
+!data/raw/.gitkeep
+# Generated outputs (recreate with Rscript R/run_all.R)
+results/*/*
+!results/*/.gitkeep
+.Rhistory
+.RData
+.Rproj.user/
+.DS_Store
