@@ -129,7 +129,7 @@ runs the edgeR count-level pipeline.
 ## 6. Results
 
 ### 6.1 Global differential expression
-
+<p align="center"><img src="report/figures/07_wnt_spider_map.png" width="90%" alt="Wnt spider map"></p>
 <p align="center"><img src="report/figures/02_volcano.png" width="70%" alt="Volcano plot"></p>
 
 1,334 genes have p < 0.05, against about 1,086 expected by chance, so the
