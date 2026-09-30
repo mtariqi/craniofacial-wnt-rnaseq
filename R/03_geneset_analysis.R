@@ -11,7 +11,7 @@ sheets <- c(bCat_indep = "bCat indep (65 out of 231)",
             TCF_indep  = "TCF indep (27 out of 166)",
             TCF_dep    = "TCF dep (139 out of 166)")
 paper <- lapply(sheets, function(s) {
-  x <- as.data.frame(read_excel(cfg$wnt_xlsx, sheet = s))[, 1:5]
+  x <- as.data.frame(read_excel(cfg$wnt_xlsx, sheet = s, .name_repair = "minimal"))[, 1:5]
   names(x) <- c("EntrezID", "symbol", "gene", "logFC_WT", "pValue_WT")
   x <- x[!is.na(x$symbol), ]
   x$logFC_WT <- as.numeric(x$logFC_WT)

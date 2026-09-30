@@ -9,3 +9,4 @@ results/*/*
 .RData
 .Rproj.user/
 .DS_Store
+results/sessionInfo.txt
